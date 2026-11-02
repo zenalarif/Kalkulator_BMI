@@ -1,0 +1,7 @@
+target/
+nbproject/private/
+*.log
+.env
+*.key
+*.pem
+*.jks

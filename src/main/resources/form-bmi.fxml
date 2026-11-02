@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BmiController">
+   <children>
+      <Label alignment="CENTER" layoutX="86.0" layoutY="14.0" prefHeight="54.0" prefWidth="235.0" style="-fx-font-size: 20;" text="Kalkulator BMI" />
+      <VBox layoutY="74.0" prefHeight="313.0" prefWidth="407.0">
+         <children>
+            <VBox prefHeight="149.0" prefWidth="407.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="76.0" prefWidth="407.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Height" />
+                        <TextField fx:id="txtHeight" prefHeight="25.0" prefWidth="134.0" />
+                        <ComboBox fx:id="cbHeightUnit" prefHeight="25.0" prefWidth="66.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="76.0" prefWidth="407.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Weight" />
+                        <TextField fx:id="txtWeight" prefHeight="25.0" prefWidth="134.0" />
+                        <ComboBox fx:id="cbWeightUnit" prefHeight="25.0" prefWidth="75.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="76.0" prefWidth="407.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="BMI" />
+                        <TextField fx:id="txtBmi" prefHeight="40.0" prefWidth="89.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="407.0" spacing="100.0">
+               <children>
+                  <Label alignment="CENTER" onMouseClicked="#handleCalculate" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: gray; -fx-background-radius: 10; -fx-cursor: hand;" text="Calculate" textFill="WHITE" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleExit" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: gray; -fx-background-radius: 10; -fx-cursor: hand;" text="Exit" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Label fx:id="lblKeterangan" alignment="TOP_CENTER" prefHeight="45.0" prefWidth="407.0" text="Keterangan" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
